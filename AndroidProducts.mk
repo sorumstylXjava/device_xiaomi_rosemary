@@ -5,4 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_rosemary.mk
+    $(LOCAL_DIR)/clover_rosemary.mk
+
+COMMON_LUNCH_CHOICES := \
+    clover_rosemary-cp2a-userdebug

@@ -12,17 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
-PRODUCT_NAME := infinity_rosemary
+PRODUCT_NAME := clover_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7BNY
 
-INFINITY_MAINTAINER := "Mnskkyy"
+CLOVER_MAINTAINER := "Java_nih_deks"
 TARGET_HAS_UDFPS := false
-WITH_GAPPS := false
+WITH_GAPPS := true
 
 PRODUCT_SYSTEM_NAME := rosemary_global
 PRODUCT_SYSTEM_DEVICE := rosemary
