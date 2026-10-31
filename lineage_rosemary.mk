@@ -27,7 +27,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Axion Device Configuration
 AXION_MAINTAINER := Java_nih_deks
-AXION_PROCESSOR := MediaTek_Helio_G95
+AXION_PROCESSOR := Helio_G95_Ultra_Pro_Max
 AXION_CAMERA_REAR_INFO := 64,8,2,2
 AXION_CAMERA_FRONT_INFO := 13
 
