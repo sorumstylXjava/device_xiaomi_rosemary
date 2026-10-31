@@ -385,3 +385,6 @@ $(call inherit-product, vendor/xiaomi/rosemary/rosemary-vendor.mk)
 
 # GameBar Performance Overlay
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
+# XiaomiParts & Dirac
+$(call inherit-product-if-exists, device/xiaomi/rosemary/parts/xiaomiparts.mk)
