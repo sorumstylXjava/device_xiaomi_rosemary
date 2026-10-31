@@ -387,4 +387,4 @@ $(call inherit-product, vendor/xiaomi/rosemary/rosemary-vendor.mk)
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 
 # XiaomiParts & Dirac
-$(call inherit-product-if-exists, device/xiaomi/rosemary/parts/xiaomiparts.mk)
+PRODUCT_PACKAGES += XiaomiParts

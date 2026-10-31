@@ -1,3 +1,0 @@
-# Allow XiaomiParts system_app to read/write sysfs nodes
-allow system_app sysfs_thermal:file rw_file_perms;
-allow system_app sysfs_graphics:file rw_file_perms;

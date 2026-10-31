@@ -1,19 +1,39 @@
-cc_prebuilt_library_shared {
-	name: "libaudioparsers",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["vendor/proprietary/vendor/lib/libaudioparsers.so"],
-		},
-		android_arm64: {
-			srcs: ["vendor/proprietary/vendor/lib64/libaudioparsers.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
+//
+// Copyright (C) 2017-2020 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "XiaomiParts",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    resource_dirs: ["res"],
+    platform_apis: true,
+    system_ext_specific: true,
+    privileged: true,
+
+    static_libs: [
+        "org.lineageos.settings.resources",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+    required: [
+        "privapp_whitelist_org.lineageos.settings.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_org.lineageos.settings.xml",
+    src: "permissions/privapp_whitelist_org.lineageos.settings.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
 }
