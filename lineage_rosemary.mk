@@ -25,6 +25,17 @@ PRODUCT_SYSTEM_DEVICE := rosemary
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Axion Device Configuration
+AXION_MAINTAINER := Java_nih_deks
+AXION_PROCESSOR := MediaTek_Helio_G95
+AXION_CAMERA_REAR_INFO := 64,8,2,2
+AXION_CAMERA_FRONT_INFO := 13
+
+# Flags
+TARGET_DISABLE_EPPE := true
+TARGET_DISABLES_LIBPERF := false
+HBM_SUPPORTED := false
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi_phoneext4_global-user 13 TP1A.220624.014 V14.0.11.0.TKLMIXM release-keys" \
     BuildFingerprint=Redmi/rosemary_global/rosemary:13/TP1A.220624.014/V14.0.11.0.TKLMIXM:user/release-keys \
