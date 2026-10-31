@@ -382,3 +382,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/rosemary/rosemary-vendor.mk)
+
+# GameBar Performance Overlay
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
